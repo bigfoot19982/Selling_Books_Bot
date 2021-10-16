@@ -38,7 +38,7 @@ On "/start" command the bot suggests a client three buttons epitomizing the area
 
 After pressing "Area button" the client receives a number of books on the topic and chooses one.  
 The client receives only the books that are not sold out at this point,  
-i.e. the bot requests the DB whether units_in_stock for this particular item are more than zero.  
+i.e. the bot requests the DB whether "units_in_stock" for this particular item are more than zero.  
 In case of having no books on the topic the bot asks the client to choose a book from another area.
 
 <img src="https://sun9-82.userapi.com/impg/r1cKdYEOMkEEJO7LPfXtnbmXjqmQPzOsFquU-Q/47Eqim0o7JM.jpg?size=498x1080&quality=96&sign=d18d490247f202ae55572006765b1114&type=album" width="250">
