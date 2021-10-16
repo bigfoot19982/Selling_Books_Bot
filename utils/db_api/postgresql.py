@@ -8,7 +8,7 @@ from aiogram.utils.markdown import hcode
 
 from data import config
 from data.config import ADMINS
-from utils.db_api.scripts import create_tab_books, create_tab_orders, notify_adms, how_much, add_ord
+from utils.db_api.big_scripts import create_tab_books, create_tab_orders, notify_adms, how_much, add_ord
 
 
 class Database:
@@ -97,3 +97,8 @@ class Database:
         order_id = int("".join(filter(str.isdigit, message.reply_to_message.text)))
         sql = "UPDATE orders SET done = True WHERE order_id = $1"
         await self.pool.execute(sql, order_id)
+
+    # counting the number of non implemented orders
+    async def count(self):
+        sql = "SELECT COUNT(*) FROM orders WHERE done = false"
+        return await self.pool.fetchval(sql)
