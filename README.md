@@ -4,7 +4,7 @@
 ![Version](https://img.shields.io/pypi/v/aiogram?style=plastic)
 ![License](https://img.shields.io/pypi/l/aiogram?style=plastic)
 ![License](https://img.shields.io/pypi/l/asyncpg?style=plastic)
-![Size](https://img.shields.io/github/repo-size/bigfoot19982/Selling_Books_Bot)
+![Size](https://img.shields.io/github/repo-size/bigfoot19982/Selling_Books_Bot?style=plastic)
 ![last_commit](https://img.shields.io/github/last-commit/bigfoot19982/Selling_Books_Bot?style=plastic)
 
 ## Description
