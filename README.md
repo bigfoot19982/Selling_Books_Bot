@@ -41,7 +41,9 @@ The client receives only the books that are not sold out at this point,
 i.e. the bot requests the DB whether "units_in_stock" for this particular item are more than zero.  
 In case of having no books on the topic the bot asks the client to choose a book from another area.
 
-<img src="https://sun9-82.userapi.com/impg/r1cKdYEOMkEEJO7LPfXtnbmXjqmQPzOsFquU-Q/47Eqim0o7JM.jpg?size=498x1080&quality=96&sign=d18d490247f202ae55572006765b1114&type=album" width="250">
+First case | Second case
+:----------:|:------------:
+<img src="https://sun9-82.userapi.com/impg/r1cKdYEOMkEEJO7LPfXtnbmXjqmQPzOsFquU-Q/47Eqim0o7JM.jpg?size=498x1080&quality=96&sign=d18d490247f202ae55572006765b1114&type=album" width="250"> | <img src="https://sun9-9.userapi.com/impg/79YH-8gsJUAyyHanWpHa39uFHIQ3iYzBdGTEoQ/KvdpwyvfoqM.jpg?size=498x1080&quality=96&sign=cfba00b0bb78be761d6a9891e4eb7b5e&type=album" width="250">
 
 ### The Payment
 
@@ -58,7 +60,7 @@ Simultaneously, the order is inserted into table "orders" within Postgresql DB.
 
 In Telegram | In Postgresql
 :----------:|:------------:
-<img src="https://sun9-53.userapi.com/impg/uYGx_AWSpeSdBfavEdnPGLOQJccQmafHK6FkLQ/DWjsOXc_giI.jpg?size=498x1080&quality=96&sign=d4327161fb2ef58fd990822f822b1b56&type=album" width="250"> | <img src="https://sun9-47.userapi.com/impg/iC4ruJwI2Ab8kY0gpYfxN8VUtxt9AL3F_BDHuQ/jM7vYbkQ1r8.jpg?size=1280x524&quality=96&sign=6583c216cf4c38af9dc35f5e0e262205&type=album" width="700">
+<img src="https://sun9-78.userapi.com/impg/osNrzizU0MeMdlKq7TZ7YmeuQI383gv9vHnj-g/zsAVWAbpOoY.jpg?size=498x1080&quality=96&sign=5155f4f5580689862b9cc8a4b4d9a09a&type=album" width="250"> | <img src="https://sun9-66.userapi.com/impg/LBoH7guJbocJqAaQM3iujMmFiZWIXknChrZOkA/rD5Uq7d94ek.jpg?size=1280x495&quality=96&sign=cd90a1776a93b0eb3149ee3e56876097&type=album" width="700">
 
 ### The Implementation
 
@@ -67,7 +69,7 @@ After that the DB considers the order implemented (by marking the column "done" 
 
 In Telegram | In Postgresql
 :----------:|:------------:
-<img src="https://sun9-18.userapi.com/impg/YPEC8ymysYEQK-sbWR2Tf0C5hm2ZEjGFOMQiRA/gZVfk645BEE.jpg?size=498x1080&quality=96&sign=39d431d19b980b23799d2ba1041187a6&type=album" width="250"> | <img src="https://sun9-5.userapi.com/impg/_xEvfDaQooi6RuOfcSNKp8l8Ogob1mZzMl0Vqg/C6XaxmIai8w.jpg?size=1598x691&quality=96&sign=fe73627629bb74773e6315927717f519&type=album" width="700">
+<img src="https://sun9-24.userapi.com/impg/4m1oKlYl__Hungxac0jfdD7ukaWj2Duxkv-EOw/X2nVD2QMxpQ.jpg?size=498x1080&quality=96&sign=91e8f6698fc6a82aff22c6517c8398eb&type=album" width="250"> | <img src="https://sun9-60.userapi.com/impg/Cido3s1g_jl6puSFY1SgEvLOKx7qLcNaTMYPIQ/9PlY8JwH6k8.jpg?size=1280x586&quality=96&sign=5ab4fe3cdd6f70d83d709d48e813a72c&type=album" width="700">
 
 ### The prompt
 
@@ -75,4 +77,4 @@ The bot owner may forget how many orders he is to attend to.
 Not to look it up into the DB he or she can simply ask the bot "Сколько невыполненных заказов?".
 In response to that, the bot will send the number of orders to carry out.
 
-<img src="https://sun9-63.userapi.com/impg/D46Z0gO6hKnFOTrvXW63UEhedEIx8UZ9AJ22gw/uvoyOlSpg2E.jpg?size=498x1080&quality=96&sign=7983225211e414f919545e75dbf2d857&type=album" width="250">
+<img src="https://sun9-35.userapi.com/impg/ss8-Yk6C_sYQu9Uqmq8Blea42RocTMFOG9iSQQ/X96TLMIiu58.jpg?size=498x1080&quality=96&sign=78f9b3a793d5180d3c0f7185febbd74a&type=album" width="250">
