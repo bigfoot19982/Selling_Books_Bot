@@ -37,13 +37,22 @@ create_tab_orders = """
         PRIMARY KEY(order_id))
         """
 
-notify_adms = """
-        SELECT buyer_name, book_name, shipping_option, order_id
+order_data = """
+        SELECT buyer_name, book_name, order_id
         FROM orders
         JOIN books USING(book_id)
         WHERE order_id = $1
         """
+get_ship_address = "SELECT shipping_address FROM orders WHERE order_id = $1"
 
 how_much = "SELECT COUNT (*) FROM books WHERE book_id = $1 AND units_in_stock > 0"
 
 add_ord = "INSERT INTO orders (book_id, buyer_name, phone, shipping_address, total_amount, shipping_option, order_date, done) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)"
+
+count_units_in_stock = "SELECT COUNT (units_in_stock) FROM books WHERE book_id = $1"
+
+update_units_in_stock = "UPDATE books SET units_in_stock = $1 WHERE book_id = $2"
+
+last_order = "SELECT MAX(order_id) FROM orders"
+
+ask_ship_opt = "SELECT shipping_option FROM orders WHERE order_id = $1"
