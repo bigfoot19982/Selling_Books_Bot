@@ -1,3 +1,4 @@
+# stop points to get the data from the address string
 async def get_constants(ship_address: str):
     city_start = ship_address.find("city") + 8
     city_end = ship_address.find(")", city_start) - 1
